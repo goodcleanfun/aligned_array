@@ -1,0 +1,18 @@
+{
+    "name": "aligned_array",
+    "version": "0.0.0",
+    "repo": "goodcleanfun/aligned_array",
+    "description": "Memory-aligned array for vectorization/SIMD operations",
+    "keywords": ["aligned", "array", "vectorization"],
+    "license": "MIT",
+    "dependencies": {
+      "goodcleanfun/aligned": "*",
+      "goodcleanfun/array": "*"
+    },
+    "development": {
+      "silentbicycle/greatest": "*"
+    },
+    "src": [
+      "src/aligned_array.h"
+    ]
+  }
