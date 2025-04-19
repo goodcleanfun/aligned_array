@@ -67,6 +67,8 @@ jobs:
           choco install curl
       - name: Download clib deps
         run: |
+          mkdir -p deps\aligned
+          curl -L https://github.com/goodcleanfun/aligned/raw/main/src/aligned.h -o deps\aligned\aligned.h
           mkdir -p deps\array
           curl -L https://github.com/goodcleanfun/array/raw/main/src/array.h -o deps\array\array.h
           mkdir -p deps\greatest
@@ -89,6 +91,8 @@ jobs:
           choco install curl -y
       - name: Download clib deps
         run: |
+          mkdir -p deps/aligned
+          curl -L https://github.com/goodcleanfun/aligned/raw/main/src/aligned.h -o deps/aligned/aligned.h
           mkdir -p deps/array
           curl -L https://github.com/goodcleanfun/array/raw/main/src/array.h -o deps/array/array.h
           mkdir -p deps/greatest
