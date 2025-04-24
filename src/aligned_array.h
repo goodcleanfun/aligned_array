@@ -10,7 +10,7 @@
 #ifndef ARRAY_MALLOC
 #define ARRAY_MALLOC_DEFINED
 #ifndef ARRAY_ALIGNMENT
-#define ARRAY_MALLOC(size) default_aligned_malloc(size)
+#define ARRAY_MALLOC(size) cache_line_aligned_malloc(size)
 #else
 #define ARRAY_MALLOC(size) aligned_malloc(size, ARRAY_ALIGNMENT)
 #endif
@@ -21,7 +21,7 @@
 #ifndef ARRAY_REALLOC
 #define ARRAY_REALLOC_DEFINED
 #ifndef ARRAY_ALIGNMENT
-#define ARRAY_REALLOC(a, prev_size, new_size) default_aligned_resize(a, prev_size, new_size)
+#define ARRAY_REALLOC(a, prev_size, new_size) cache_line_aligned_resize(a, prev_size, new_size)
 #else
 #define ARRAY_REALLOC(a, prev_size, new_size) aligned_resize(a, prev_size, new_size, ARRAY_ALIGNMENT)
 #endif
