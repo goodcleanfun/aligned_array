@@ -27,16 +27,16 @@
 #endif
 #endif
 
-#ifndef ARRAY_FREE
-#define ARRAY_FREE_DEFINED
-#define ARRAY_FREE(a) default_aligned_free(a)
+#ifndef ARRAY_DATA_FREE
+#define ARRAY_DATA_FREE_DEFINED
+#define ARRAY_DATA_FREE(a) default_aligned_free(a)
 #endif
 
 #include "array/array.h"
 
-#ifdef ARRAY_MALLOC_DEFINED
-#undef ARRAY_MALLOC
-#undef ARRAY_MALLOC_DEFINED
+#ifdef ARRAY_DATA_MALLOC_DEFINED
+#undef ARRAY_DATA_MALLOC
+#undef ARRAY_DATA_MALLOC_DEFINED
 #endif
 
 #undef ARRAY_DATA_REALLOC_NEEDS_PREV_SIZE
