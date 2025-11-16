@@ -1,6 +1,6 @@
 {
     "name": "aligned_array",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "repo": "goodcleanfun/aligned_array",
     "description": "Memory-aligned array for vectorization/SIMD operations",
     "keywords": ["aligned", "array", "vectorization"],
